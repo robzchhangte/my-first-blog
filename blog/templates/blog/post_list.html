@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <p>Welcome to mysite - Html template file </p>
+
+  <ul>
+    {% for post in posts %}
+    <li>{{ post.title }}</li>
+    <p>{{ post.text|linebreaksbr }}</p>
+    {% endfor %}
+  </u>
+{% endblock %}
